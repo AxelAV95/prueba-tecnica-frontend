@@ -1,4 +1,4 @@
-# PokéGame Clone - Prueba Técnica
+# PokéGame clone - Prueba técnica
 
 **Clonación del sitio web "PokéGame"** - Implementación completa desarrollada como prueba técnica utilizando React 19 y Vite. 
 
@@ -25,7 +25,6 @@ El proyecto replica la funcionalidad del juego original donde el usuario debe ad
 - **HTTP**: Axios (interceptors, error handling)
 - **Animaciones**: GSAP (transiciones, efectos visuales)
 - **Notificaciones**: notie (feedback al usuario)
-- **Calidad**: ESLint + Prettier
 - **Testing**: Jest + Babel (pruebas unitarias)
 - **API externa**: [PokeAPI](https://pokeapi.co/) (datos Pokémon)
 
