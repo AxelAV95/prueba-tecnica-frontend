@@ -170,14 +170,12 @@ src/features/PokemonGame/
 - **Animaciones avanzadas**: GSAP para transiciones profesionales
 - **Error handling robusto**: Interceptors, fallbacks, user feedback
 - **Performance**: Vite + React 19 (última versión estable)
-- **Developer Experience**: ESLint, scripts automatizados, documentación
+
 
 ### 🔮 **Roadmap futuro (fuera de scope actual)**
 - **TypeScript**: Migración gradual para type safety
-- **CI/CD**: GitHub Actions (lint + tests automáticos)
-- **PWA**: Service workers, offline mode
-- **Features adicionales**: Modo multijugador, sistema de puntuación, colección Pokémon
-- **Performance**: Code splitting, imagen optimization, caching strategies
+- **Features adicionales**: Modo multijugador, sistema de puntuación, colección Pokémon, ver detalles del pokémon 
+
 
 
 ## Pruebas unitarias (Jest)
@@ -252,7 +250,7 @@ src/
 ### 🎯 **Puntos destacados**
 - **Tiempo de desarrollo**: Implementación completa y funcional
 - **Calidad técnica**: Separación de responsabilidades, patrones modernos
-- **User Experience**: Animaciones fluidas, feedback inmediato
+- **User experience**: Animaciones fluidas, feedback inmediato
 - **Mantenibilidad**: Código auto-documentado, tests unitarios
 
 ---
