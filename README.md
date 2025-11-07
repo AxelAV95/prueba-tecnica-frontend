@@ -180,7 +180,7 @@ src/features/PokemonGame/
 - **Performance**: Code splitting, imagen optimization, caching strategies
 
 
-## Pruebas Unitarias (Jest)
+## Pruebas unitarias (Jest)
 
 Se implementaron pruebas unitarias enfocadas en **lógica pura** y **funciones helpers**, evitando pruebas de UI para mantener simplicidad y velocidad.
 
