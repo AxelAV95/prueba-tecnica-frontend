@@ -4,10 +4,6 @@
 
 El proyecto replica la funcionalidad del juego original donde el usuario debe adivinar el nombre del Pokémon mostrado en silueta, seleccionando entre 4 opciones disponibles. Incluye animaciones fluidas, manejo de estados del juego, y arquitectura escalable basada en características (features).
 
-## Versión desplegada
-
-(Agregar aquí el link a la versión desplegada)
-
 ## Demo
 
 - Live: Añade aquí el enlace a la versión en Vercel / Netlify / GitHub Pages.
@@ -51,8 +47,8 @@ npm run preview   # vista previa de la build (Vite)
 1. Clona el repositorio:
 
 ```
-git clone <tu-repo-url>
-cd "pokegame-clone"
+git clone https://github.com/AxelAV95/prueba-tecnica-frontend.git
+cd "prueba-tecnica-frontend"
 ```
 
 2. Instala dependencias:
@@ -140,24 +136,24 @@ src/features/PokemonGame/
 
 ## Buenas prácticas aplicadas
 
-### 🎯 **Arquitectura y Organización**
+### 🎯 **Arquitectura y organización**
 - **Single Responsibility**: Cada componente/función tiene una responsabilidad única
 - **Separation of Concerns**: UI, lógica, y datos están claramente separados
 - **Feature-first**: Organización por funcionalidades, no por tipo de archivo
 
-### 🔧 **Desarrollo y Calidad**
+### 🔧 **Desarrollo y calidad**
 - **Custom Hooks**: Lógica reutilizable encapsulada (`usePokemonGame`)
 - **Error Boundaries**: Interceptors HTTP para manejo centralizado de errores
 - **Type Safety**: ESLint configurado para detectar errores tempranos
 - **Performance**: Vite para HMR rápido, lazy loading implícito
 
-### 🎨 **UX y Animaciones**
+### 🎨 **UX y animaciones**
 - **Feedback inmediato**: Notificaciones toast con `notie`
 - **Transiciones fluidas**: GSAP para animaciones profesionales
 - **Estados visuales**: Loading, playing, answered con transiciones apropiadas
 - **Responsive Design**: Tailwind CSS para adaptabilidad móvil
 
-### 🧪 **Testing y Mantenibilidad**
+### 🧪 **Testing y mantenibilidad**
 - **Pruebas unitarias**: Jest enfocado en lógica pura y funciones críticas
 - **Mocking estratégico**: APIs y dependencias externas mockeadas
 - **Coverage reporting**: Métricas de cobertura para identificar áreas no probadas
@@ -184,17 +180,6 @@ src/features/PokemonGame/
 - **Features adicionales**: Modo multijugador, sistema de puntuación, colección Pokémon
 - **Performance**: Code splitting, imagen optimization, caching strategies
 
-## Notas para contribuidores
-
-1. Crea una rama con un nombre descriptivo: `feature/nombre` o `fix/descripcion`.
-2. Corre `npm run lint` antes de abrir PR.
-3. Añade pruebas al cambiar lógica crítica.
-
-## Licencia
-
-Agrega aquí la licencia del proyecto (por ejemplo MIT) si lo deseas.
-
----
 
 ## Pruebas Unitarias (Jest)
 
