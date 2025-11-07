@@ -6,7 +6,7 @@ El proyecto replica la funcionalidad del juego original donde el usuario debe ad
 
 ## Demo
 
-- Live: Añade aquí el enlace a la versión en Vercel / Netlify / GitHub Pages.
+- Live: https://pokegame-assessment.netlify.app/
 
 ## Funcionalidades implementadas
 
