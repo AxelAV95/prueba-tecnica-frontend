@@ -1,0 +1,152 @@
+@import "tailwindcss";
+
+/* Fuente Pokémon */
+@font-face {
+  font-family: "PokemonSolid";
+  src: url("/fonts/PokemonSolid.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* Fuente principal Poppins */
+@font-face {
+  font-family: "Poppins";
+  src: url("/fonts/poppins.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Establecer Poppins como fuente predeterminada */
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+/* Estilos para los títulos con fuente Pokémon */
+.font-title {
+  font-family: "PokemonSolid", sans-serif;
+  font-weight: bold;
+  color: #ffcb05; /* Amarillo Pokémon */
+  -webkit-text-stroke: 1px #2a75bb; /* Borde azul */
+
+  text-shadow: 2px 2px 0 #3c5aa6, 4px 4px 6px rgba(0, 0, 0, 0.4);
+  letter-spacing: 2px; /* separación más “cartoon” */
+}
+
+/* Estilos para las notificaciones de notie.js */
+.font-notie {
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 0 4px;
+}
+
+.notie-container {
+  min-height: 20px; 
+  display: flex;
+  align-items: center; 
+  justify-content: center; 
+  line-height: 0.1; 
+}
+
+.notie-background-success {
+  background-color: #F67C1F !important; 
+  color: white !important;
+  height: 7px !important;
+  font-size: 18px !important;
+}
+.notie-background-error {
+  font-size: 18px !important;
+  font-weight: bold !important;
+}
+
+/* Estilos para el botón principal de iniciar juego */
+
+.pokemon-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  padding: 0.75rem 2rem;
+  background: linear-gradient(180deg, #f7d347 0%, #e8b930 100%);
+  border: 3px solid #224b94;
+  border-radius: 9999px;
+  font-family: "Poppins", sans-serif;
+  color: #224b94;
+  -webkit-text-stroke: 1.2px #224b94;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  cursor: pointer;
+  box-shadow: 0 5px 0 #224b94, 0 8px 10px rgba(0, 0, 0, 0.3);
+  transition: all 0.2s ease-out;
+}
+
+.pokeball-icon {
+  width: 28px;
+  height: 28px;
+  transition: transform 0.3s ease;
+  filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 0.4));
+}
+
+.pokemon-button:hover {
+  transform: translateY(-2px);
+  background: linear-gradient(180deg, #ffe263 0%, #f5c43c 100%);
+  box-shadow: 0 8px 0 #1d3d7a, 0 10px 16px rgba(0, 0, 0, 0.35);
+}
+
+.pokemon-button:hover .pokeball-icon {
+  transform: rotate(180deg);
+}
+
+.pokemon-button:active {
+  transform: translateY(2px);
+  box-shadow: 0 3px 0 #1d3d7a, 0 4px 8px rgba(0, 0, 0, 0.35);
+}
+
+/*Estos estilos son para los botones de opción*/
+.option-button {
+  display: inline-block;
+  width: 100%;
+  padding: 0.8rem 1.2rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  background: linear-gradient(180deg, #fff7d1 0%, #ffe38c 100%);
+  border: 3px solid #2a75bb;
+  border-radius: 12px;
+  color: #1e3a56;
+  box-shadow: 0 4px 0 #1e3a56, 0 6px 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.option-button:hover:not(:disabled) {
+  background: linear-gradient(180deg, #fffad9 0%, #ffd95c 100%);
+  transform: translateY(-2px);
+}
+
+.option-button.selected {
+  background: linear-gradient(180deg, #fff199 0%, #ffd95c 100%);
+  transform: scale(1.05);
+}
+
+.option-button.correct {
+  background: linear-gradient(180deg, #58d16f 0%, #2da44e 100%);
+  border-color: #1e682d;
+  color: #fff;
+  text-shadow: 1px 1px 3px #000;
+  transform: scale(1.05);
+}
+
+.option-button.wrong {
+  background: linear-gradient(180deg, #ff8a80 0%, #e53935 100%);
+  border-color: #8b0000;
+  color: #fff;
+  text-shadow: 1px 1px 3px #000;
+  transform: scale(1.05);
+}
+
+.option-button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
